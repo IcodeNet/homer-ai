@@ -1,0 +1,23 @@
+name: I got stuck (learner question)
+description: You are following the course and something is unclear or does not work for you.
+labels: ["question"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Which notebook and step are you on?
+      placeholder: "02_04, the step about the sliding window"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: Say what you expected, what you saw, and what you already tried. There are no silly questions; many notebook answers started as a learner question.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Any output or error message
+      render: text

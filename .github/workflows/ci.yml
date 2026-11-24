@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      # CPU-only PyTorch on Linux (see [tool.uv.sources] in pyproject.toml)
+      - run: uv sync --locked
+
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+      - run: uv run pytest
+
+      # The notebooks are generated: building twice must change nothing.
+      - name: Build notebooks twice, expect no diff
+        run: |
+          uv run python scripts/build_notebooks.py
+          uv run python scripts/build_notebooks.py
+          git diff --exit-code
+
+      # Chapter 8 and notebook 10_02 need GPT-2's weights (548 MB): CI checks
+      # those notebooks' format but does not run them (see CONTRIBUTING.md).
+      # The exercises are left blank here, so every check must print ⏳.
+      - run: uv run python scripts/run_notebooks.py
+        env:
+          HOMER_SKIP_DOWNLOADS: "1"
+      # The "Your turn" exercises: put each solution in place of its starter cell
+      # and run those notebooks again. Every check must print ✅.
+      - run: uv run python scripts/run_notebooks.py --solutions
+        env:
+          HOMER_SKIP_DOWNLOADS: "1"
+      - run: uv run python scripts/check_links.py
+
+      # The diagram images are generated too: re-drawing must change nothing.
+      - name: Export diagrams, expect no diff
+        run: |
+          uv run python scripts/export_diagrams.py
+          git diff --exit-code docs/images

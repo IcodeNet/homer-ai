@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in the code, a notebook cell, or a link is broken.
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where did it happen?
+      description: The notebook or file, and the cell if you know it (for example 03_02, step 2).
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: Paste the last lines of the error message if there was one.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Your computer
+      description: Operating system, and the output of `uv --version`.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before posting
+      options:
+        - label: I ran the notebook's cells from the top, in order.
+        - label: I read 00_02 (reading error messages) and the FAQ.

@@ -1,0 +1,21 @@
+name: Content suggestion
+description: An idea for a new notebook, a clearer explanation, a better example or a missing diagram.
+labels: ["content"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Which notebook or chapter is it about?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would make it better?
+      description: Which learner question is not answered, which word is not explained, or which example would help.
+    validations:
+      required: true
+  - type: textarea
+    id: book
+    attributes:
+      label: Anything in the book or elsewhere that helps? (optional)

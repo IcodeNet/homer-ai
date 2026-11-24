@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this course, please cite it as below, and cite the book and the texts it builds on."
+title: "homer-ai: build a small language model on Homer's Greek"
+type: software
+abstract: >-
+  A course for developers new to machine learning. You build a small
+  character-level GPT on Homer's Odyssey and Iliad, on your own computer, and
+  let other AI apps such as Claude ask your model for Greek text through MCP.
+authors:
+  - family-names: Thanopoulos
+    given-names: Byron
+license: MIT
+repository-code: "https://github.com/IcodeNet/homer-ai"
+url: "https://github.com/IcodeNet/homer-ai"
+keywords:
+  - large language model
+  - GPT
+  - tutorial
+  - PyTorch
+  - Homer
+  - Ancient Greek
+references:
+  - type: book
+    title: "Build a Large Language Model (From Scratch)"
+    authors:
+      - family-names: Raschka
+        given-names: Sebastian
+    publisher:
+      name: Manning Publications
+    year: 2024
+    url: "https://www.manning.com/books/build-a-large-language-model-from-scratch"
+    notes: "The course follows this book; each notebook names the matching section."
+  - type: data
+    title: "Perseus Digital Library: Greek texts of Homer's Odyssey (A. T. Murray, 1919) and Iliad (Monro and Allen)"
+    authors:
+      - name: Perseus Digital Library, Tufts University
+    url: "https://www.perseus.tufts.edu/"
+    license: CC-BY-SA-4.0
+  - type: book
+    title: "The Odyssey and The Iliad of Homer (prose translations)"
+    authors:
+      - family-names: Butler
+        given-names: Samuel
+    notes: "The English text in data/homer/ is Samuel Butler's prose translation, in the public domain."

@@ -1,0 +1,40 @@
+{"id": 1, "poem": "odyssey", "question": "Where is Odysseus when the poem begins, and who keeps him there?", "answer": "On an island, kept by the goddess Calypso", "refs": [[1, 2, 2], [1, 5, 5]]}
+{"id": 2, "poem": "odyssey", "question": "What trick does Penelope use to put off the suitors?", "answer": "She weaves a shroud by day and unpicks it at night", "refs": [[2, 7, 7], [19, 14, 14], [24, 10, 10]]}
+{"id": 3, "poem": "odyssey", "question": "What happens to the men who eat the lotus?", "answer": "They forget home and want to stay", "refs": [[9, 5, 5]]}
+{"id": 4, "poem": "odyssey", "question": "What false name does Odysseus give to the Cyclops?", "answer": "Noman", "refs": [[9, 24, 25]]}
+{"id": 5, "poem": "odyssey", "question": "How do Odysseus and his men get out of the Cyclops' cave?", "answer": "They hang under the bellies of his sheep", "refs": [[9, 31, 32], [9, 34, 34]]}
+{"id": 6, "poem": "odyssey", "question": "What did Aeolus give Odysseus, and how did it go wrong?", "answer": "A bag holding the winds; the crew opened it", "refs": [[10, 2, 4]]}
+{"id": 7, "poem": "odyssey", "question": "What does Circe turn Odysseus' men into?", "answer": "Pigs", "refs": [[10, 17, 17]]}
+{"id": 8, "poem": "odyssey", "question": "Which plant protects Odysseus from Circe's magic?", "answer": "The herb moly, given by Hermes", "refs": [[10, 23, 24]]}
+{"id": 9, "poem": "odyssey", "question": "Which dead prophet does Odysseus go to the underworld to consult?", "answer": "Teiresias of Thebes", "refs": [[10, 41, 48], [11, 2, 13]]}
+{"id": 10, "poem": "odyssey", "question": "What does the ghost of Achilles say about being dead?", "answer": "He would rather be a poor man's servant alive than king of the dead", "refs": [[11, 42, 42]]}
+{"id": 11, "poem": "odyssey", "question": "How does Odysseus manage to listen to the Sirens and survive?", "answer": "Wax in his men's ears, and he is tied to the mast", "refs": [[12, 5, 5], [12, 14, 16]]}
+{"id": 12, "poem": "odyssey", "question": "How many of Odysseus' men does Scylla take from the ship?", "answer": "Six", "refs": [[12, 8, 8], [12, 20, 20]]}
+{"id": 13, "poem": "odyssey", "question": "Who is the princess who helps Odysseus when he is washed up among the Phaeacians?", "answer": "Nausicaa", "refs": [[6, 9, 15]]}
+{"id": 14, "poem": "odyssey", "question": "What does Poseidon do to the Phaeacian ship that carried Odysseus home?", "answer": "He turns it into stone", "refs": [[13, 15, 16]]}
+{"id": 15, "poem": "odyssey", "question": "What happens when Odysseus' old dog sees him again?", "answer": "Argos knows him, and dies", "refs": [[17, 27, 30]]}
+{"id": 16, "poem": "odyssey", "question": "Who recognises Odysseus by the scar on his leg?", "answer": "His old nurse Euryclea", "refs": [[19, 25, 25], [19, 29, 29]]}
+{"id": 17, "poem": "odyssey", "question": "How did Odysseus get the scar on his leg?", "answer": "A wild boar wounded him on Mount Parnassus", "refs": [[19, 25, 25], [19, 28, 28]]}
+{"id": 18, "poem": "odyssey", "question": "What test does Penelope set for the suitors?", "answer": "String Odysseus' bow and shoot through twelve axes", "refs": [[19, 36, 36], [21, 3, 3]]}
+{"id": 19, "poem": "odyssey", "question": "Which suitor does Odysseus kill first?", "answer": "Antinous", "refs": [[22, 2, 2]]}
+{"id": 20, "poem": "odyssey", "question": "What secret about their bed proves to Penelope that he really is Odysseus?", "answer": "He built it around a living olive tree", "refs": [[23, 18, 18]]}
+{"id": 21, "poem": "iliad", "question": "Why is Achilles angry with Agamemnon?", "answer": "Agamemnon takes his prize, the girl Briseis", "refs": [[1, 17, 17], [1, 29, 31]]}
+{"id": 22, "poem": "iliad", "question": "Why does Apollo send a plague on the Greek army?", "answer": "Agamemnon dishonoured his priest Chryses", "refs": [[1, 2, 5]]}
+{"id": 23, "poem": "iliad", "question": "Who stops Achilles from drawing his sword on Agamemnon?", "answer": "Athena, who catches him by the hair", "refs": [[1, 18, 18]]}
+{"id": 24, "poem": "iliad", "question": "What happens to Thersites after he insults Agamemnon?", "answer": "Odysseus rebukes him and beats him with the sceptre", "refs": [[2, 19, 20]]}
+{"id": 25, "poem": "iliad", "question": "Which two men agree to fight a duel for Helen?", "answer": "Paris (Alexandrus) and Menelaus", "refs": [[3, 6, 9], [3, 23, 25]]}
+{"id": 26, "poem": "iliad", "question": "Which goddess does Diomedes wound in the hand?", "answer": "Aphrodite", "refs": [[5, 29, 32], [5, 37, 37]]}
+{"id": 27, "poem": "iliad", "question": "Why do Glaucus and Diomedes swap armour instead of fighting?", "answer": "Their grandfathers were guest-friends; gold armour for bronze", "refs": [[6, 16, 17]]}
+{"id": 28, "poem": "iliad", "question": "Why is Hector's baby son frightened of his father?", "answer": "The horse-hair plume on his helmet", "refs": [[6, 31, 31]]}
+{"id": 29, "poem": "iliad", "question": "What two fates did Thetis tell Achilles he could choose between?", "answer": "Die at Troy with lasting fame, or go home to a long life without it", "refs": [[9, 21, 21]]}
+{"id": 30, "poem": "iliad", "question": "Who is the Trojan spy caught at night by Odysseus and Diomedes?", "answer": "Dolon", "refs": [[10, 27, 39]]}
+{"id": 31, "poem": "iliad", "question": "How does Hera take Zeus's mind off the battle?", "answer": "She borrows Aphrodite's girdle, charms him, and Sleep puts him to sleep", "refs": [[14, 12, 28]]}
+{"id": 32, "poem": "iliad", "question": "Who kills Patroclus?", "answer": "Apollo strikes him, Euphorbus wounds him, Hector kills him", "refs": [[16, 50, 52]]}
+{"id": 33, "poem": "iliad", "question": "Who makes the new armour for Achilles?", "answer": "Hephaestus, at the request of Thetis", "refs": [[18, 29, 35], [18, 47, 48]]}
+{"id": 34, "poem": "iliad", "question": "What does the horse Xanthus tell Achilles?", "answer": "That his death is near", "refs": [[19, 29, 29]]}
+{"id": 35, "poem": "iliad", "question": "Which river rises up and fights Achilles?", "answer": "Scamander (Xanthus)", "refs": [[21, 10, 22]]}
+{"id": 36, "poem": "iliad", "question": "How does Athena deceive Hector in his last fight?", "answer": "She takes the form of his brother Deiphobus", "refs": [[22, 14, 15], [22, 20, 20]]}
+{"id": 37, "poem": "iliad", "question": "What does Achilles do to Hector's body after killing him?", "answer": "He ties it to his chariot and drags it", "refs": [[22, 28, 28], [24, 1, 1]]}
+{"id": 38, "poem": "iliad", "question": "Who wins the chariot race at the funeral games for Patroclus?", "answer": "Diomedes", "refs": [[23, 36, 36]]}
+{"id": 39, "poem": "iliad", "question": "Why does Priam go to Achilles' tent at night?", "answer": "To ransom the body of his son Hector", "refs": [[24, 8, 13], [24, 37, 39]]}
+{"id": 40, "poem": "iliad", "question": "How does the Iliad end?", "answer": "With the funeral of Hector", "refs": [[24, 55, 56]]}

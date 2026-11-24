@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Trained model files
+*.pt
+# ...except the ready-made models that ship with the course
+!/models/*.pt
+
+# macOS folder settings
+.DS_Store
+
+# Output from running lessons and experiments
+/*.txt
+/*.log
+.ipynb_checkpoints/
+.ruff_cache/
+/data/raw/
