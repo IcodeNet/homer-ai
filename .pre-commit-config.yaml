@@ -1,0 +1,16 @@
+# Optional: after `pre-commit install`, these run before every commit.
+# (Install the tool first: `uv tool install pre-commit`.)
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.6
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: notebooks-up-to-date
+        name: notebooks are rebuilt from scripts/build_notebooks.py
+        entry: bash -c 'uv run python scripts/build_notebooks.py && git diff --exit-code -- notebooks scripts/templates'
+        language: system
+        pass_filenames: false
+        files: ^(scripts/(build_notebooks|export_diagrams|course/.*)\.py|src/homer_ai/studio_style\.py|notebooks/)

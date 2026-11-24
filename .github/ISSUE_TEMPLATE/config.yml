@@ -1,0 +1,6 @@
+# Questions about setup are answered in docs/FAQ.md; please read it before opening an issue.
+blank_issues_enabled: false
+contact_links:
+  - name: Setup questions (read first)
+    url: https://github.com/IcodeNet/homer-ai/blob/main/docs/FAQ.md
+    about: Most setup problems are answered in the FAQ.

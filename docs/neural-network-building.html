@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Learning Building</title>
+<style>
+/*
+VOICE: patient teacher, plain words, no jargon left undefined.
+IDEA: an architect's cutaway drawing of an office building — each floor is a part of a neural network.
+PICTURE: a cutaway building — data rides up the stairs, the red "blame" elevator rides down, workers turn knobs.
+COLOUR and TYPE: white, ink #121212, slate #2e6f8e for the forward trip, red #e3120b for autograd; system sans-serif + Georgia (no web fonts).
+LAYOUT: title, then the picture beside its floor guide, then the learning loop, autograd, code, word list.
+*/
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#10191e);--ink:light-dark(#121212,#eef2f4);--soft:light-dark(#4a5560,#a9b7bf);
+--panel:light-dark(#e3ecf0,#18262e);--slate:light-dark(#2e6f8e,#6fb3d3);--red:light-dark(#e3120b,#ff5a4f);
+--wall:light-dark(#f6f9fa,#1d2d36);--line:light-dark(#c9d6dc,#2f4450);--sky:light-dark(#e3ecf0,#132029);--earth:light-dark(#9fb6c1,#24363f)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:clip}
+.band{padding:clamp(28px,4vw,64px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.05;text-wrap:balance;margin:0 0 14px}
+h1{font-size:clamp(32px,5vw,50px)}h2{font-size:clamp(26px,3.2vw,34px)}
+p{max-width:68ch;margin:0 0 14px}
+.lede{font-size:17px;color:var(--soft)}
+.tab{display:inline-block;background:var(--red);color:#fff;font-weight:600;font-size:14px;padding:3px 10px;margin-bottom:16px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:start;margin-top:22px}
+.pic{background:var(--sky);border-radius:6px;overflow:hidden}
+.pic svg{display:block;width:100%;height:auto}
+.guide{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.guide li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.guide b{display:block}
+.guide .sw{width:18px;height:18px;border-radius:4px;margin-top:4px}
+.term{font-weight:600;color:var(--slate)}
+.term.r{color:var(--red)}
+.panel{background:var(--panel)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:20px;padding:0;list-style:none}
+.steps li{background:var(--bg);padding:18px;border-radius:6px}
+.steps .n{font-family:Georgia,"Times New Roman",serif;font-size:32px;line-height:1;display:block;margin-bottom:8px}
+.steps li:nth-child(1) .n{color:var(--slate)}.steps li:nth-child(3) .n{color:var(--red)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,56px)}
+pre{background:var(--panel);padding:16px;border-radius:6px;font:14px/1.55 ui-monospace,Menlo,monospace;margin:0}
+.c{color:var(--soft)}
+.codehead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+button{font:600 15px system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:44px;padding:0 18px;border-radius:6px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer}
+button:focus-visible{outline:3px solid var(--slate);outline-offset:2px}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,12em) minmax(0,1fr);border-top:2px solid var(--ink)}
+dt,dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line)}
+dt{font-weight:600;padding-right:14px}
+.note{font-size:14px;color:var(--soft)}
+@keyframes up{0%{transform:translateY(0);opacity:0}5%{opacity:1}40%{transform:translateY(-400px);opacity:1}45%,100%{transform:translateY(-400px);opacity:0}}
+@keyframes down{0%,48%{transform:translateY(0);opacity:0}52%{opacity:1}90%{transform:translateY(400px);opacity:1}95%,100%{transform:translateY(400px);opacity:0}}
+@keyframes turn{0%,88%{transform:rotate(0)}96%,100%{transform:rotate(40deg)}}
+.fwd{animation:up 8s linear infinite}
+.bwd{animation:down 8s linear infinite}
+.knob .tick{transform-box:fill-box;transform-origin:50% 100%;animation:turn 8s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.fwd,.bwd,.knob .tick{animation:none}.bwd{opacity:1;transform:translateY(200px)}.fwd{transform:translateY(-200px)}}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hero,.cols{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.steps{grid-template-columns:minmax(0,1fr)}dl{grid-template-columns:minmax(0,1fr)}dt{border-bottom:0;padding-bottom:0}}
+</style>
+</head>
+<body>
+
+<section class="band">
+<div class="wrap">
+<span class="tab">AI engineering basics</span>
+<h1>A neural network is a building that learns by turning its knobs</h1>
+<p class="lede">A <b>neural network</b> is a program that learns from examples instead of following rules you write. Picture it as a building: data comes in at the bottom, gets changed a little on every floor, and an answer comes out at the top. PyTorch gives you the parts to build it (<code>torch.nn</code>), the elevator that works out what went wrong (<b>autograd</b>) and the repair crew that fixes it (<code>torch.optim</code>).</p>
+
+<div class="hero">
+<div class="pic">
+<svg viewBox="0 0 480 660" role="img" aria-label="Cutaway drawing of a building: lobby for input, two layer floors with knobs, top floor for output, a rooftop booth for the loss check, stairs carrying data up and a red elevator carrying blame down.">
+<defs>
+<g id="knob" class="knob"><circle r="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="2.5"/><line class="tick" x1="0" y1="-1" x2="0" y2="-10" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/></g>
+<g id="worker"><circle cx="0" cy="-30" r="6" fill="var(--ink)"/><path d="M-7 -33a7 7 0 0 1 14 0z" fill="var(--red)"/><rect x="-6" y="-23" width="12" height="18" rx="3" fill="var(--ink)"/><path d="M-5 -5l-2 10M5 -5l2 10" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><path d="M6 -18l12 -6" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><path d="M17 -28l4 6-3 2-4-6z" fill="var(--soft)"/></g>
+<linearGradient id="wallg" x1="0" x2="1"><stop offset="0" stop-color="var(--wall)"/><stop offset="1" stop-color="var(--panel)"/></linearGradient>
+</defs>
+<rect width="480" height="660" fill="var(--sky)"/>
+<rect y="610" width="480" height="50" fill="var(--earth)"/>
+<!-- shadow plane -->
+<path d="M380 170l18 12v428h-18z" fill="var(--line)"/>
+<!-- roof booth -->
+<rect x="150" y="96" width="180" height="74" fill="url(#wallg)" stroke="var(--ink)" stroke-width="2.5"/>
+<path d="M140 96h200l-12-14H152z" fill="var(--ink)"/>
+<text x="164" y="124" font-size="15" font-weight="600" fill="var(--ink)">Roof · loss check</text>
+<g transform="translate(300 160)"><use href="#worker"/></g>
+<rect x="164" y="134" width="70" height="26" rx="3" fill="var(--bg)" stroke="var(--red)" stroke-width="2"/>
+<text x="171" y="152" font-size="13" font-weight="600" fill="var(--red)">wrong: 0.6</text>
+<!-- building body -->
+<rect x="100" y="170" width="280" height="440" fill="url(#wallg)" stroke="var(--ink)" stroke-width="2.5"/>
+<g stroke="var(--ink)" stroke-width="2.5"><line x1="100" y1="280" x2="380" y2="280"/><line x1="100" y1="390" x2="380" y2="390"/><line x1="100" y1="500" x2="380" y2="500"/></g>
+<!-- shafts -->
+<rect x="108" y="176" width="40" height="428" fill="var(--panel)" stroke="var(--slate)" stroke-width="2"/>
+<rect x="332" y="176" width="40" height="428" fill="var(--panel)" stroke="var(--red)" stroke-width="2"/>
+<g stroke="var(--slate)" stroke-width="2" opacity=".55">
+<path d="M112 590h32M112 560h32M112 530h32M112 480h32M112 450h32M112 420h32M112 370h32M112 340h32M112 310h32M112 260h32M112 230h32M112 200h32"/></g>
+<!-- floor labels -->
+<g font-size="15" font-weight="600" fill="var(--ink)">
+<text x="158" y="200">Top floor · output</text>
+<text x="158" y="310">Floor 2 · layer</text>
+<text x="158" y="420">Floor 1 · layer</text>
+<text x="158" y="530">Lobby · input</text></g>
+<!-- output screen -->
+<rect x="160" y="216" width="120" height="44" rx="4" fill="var(--ink)"/>
+<text x="172" y="244" font-size="15" font-weight="600" fill="var(--bg)">cat? 70%</text>
+<g transform="translate(305 270)"><use href="#worker"/></g>
+<!-- knobs on layer floors -->
+<g transform="translate(0 0)">
+<use href="#knob" x="178" y="350"/><use href="#knob" x="212" y="350"/><use href="#knob" x="246" y="350"/><use href="#knob" x="280" y="350"/>
+<use href="#knob" x="178" y="460"/><use href="#knob" x="212" y="460"/><use href="#knob" x="246" y="460"/><use href="#knob" x="280" y="460"/></g>
+<g transform="translate(312 380)"><use href="#worker"/></g>
+<g transform="translate(312 490)"><use href="#worker"/></g>
+<!-- lobby: the input tensor -->
+<g fill="var(--slate)">
+<rect x="162" y="548" width="22" height="22" opacity=".35"/><rect x="186" y="548" width="22" height="22" opacity=".8"/><rect x="210" y="548" width="22" height="22" opacity=".55"/><rect x="234" y="548" width="22" height="22"/>
+<rect x="162" y="572" width="22" height="22" opacity=".7"/><rect x="186" y="572" width="22" height="22" opacity=".25"/><rect x="210" y="572" width="22" height="22" opacity=".9"/><rect x="234" y="572" width="22" height="22" opacity=".45"/></g>
+<text x="264" y="580" font-size="13" fill="var(--soft)">numbers</text>
+<!-- door -->
+<rect x="296" y="560" width="26" height="50" fill="var(--ink)"/>
+<!-- moving parts -->
+<circle class="fwd" cx="128" cy="590" r="10" fill="var(--slate)" stroke="var(--bg)" stroke-width="3"/>
+<rect class="bwd" x="337" y="180" width="30" height="34" rx="4" fill="var(--red)"/>
+<!-- outside labels -->
+<text transform="translate(78 390) rotate(-90)" text-anchor="middle" font-size="15" font-weight="600" fill="var(--slate)">↑ data goes up: forward</text>
+<text transform="translate(410 390) rotate(90)" text-anchor="middle" font-size="15" font-weight="600" fill="var(--red)">↓ blame comes down: autograd</text>
+</svg>
+</div>
+
+<ol class="guide">
+<li><span class="sw" style="background:var(--ink)"></span><div><b>Roof: the loss check (loss function)</b>An inspector compares the building's guess with the right answer and gives a score for <i>how wrong</i> it was. This score is called the <span class="term">loss</span>. Big number = very wrong, zero = perfect.</div></li>
+<li><span class="sw" style="background:var(--ink)"></span><div><b>Top floor: the output layer</b>Gives the final answer, for example "70% sure this photo is a cat".</div></li>
+<li><span class="sw" style="background:var(--panel);border:2px solid var(--ink)"></span><div><b>Floors 1 and 2: layers</b>A <span class="term">layer</span> is one step of work. Each floor takes the numbers from the floor below, mixes them, and passes new numbers up. More floors = the network can learn harder patterns.</div></li>
+<li><span class="sw" style="border:2.5px solid var(--ink);border-radius:50%"></span><div><b>Knobs: weights (also called parameters)</b>Each layer mixes numbers using its knobs. The knobs are the only thing the building can change. <i>Learning means finding good knob settings.</i> Real models have millions or billions of knobs.</div></li>
+<li><span class="sw" style="background:var(--slate)"></span><div><b>Lobby and stairs: input and the forward pass</b>Data walks in as a <span class="term">tensor</span>, which is just a grid of numbers (a photo becomes one number per pixel colour). Riding up through every floor is called the <span class="term">forward pass</span>.</div></li>
+<li><span class="sw" style="background:var(--red)"></span><div><b>Red elevator: autograd (the backward pass)</b>Starts at the roof with the score and rides <i>down</i>. On every floor it leaves a note on each knob: "turn me this way, about this much, and the score gets better." That note is a <span class="term r">gradient</span>.</div></li>
+<li><span class="sw" style="background:var(--red);border-radius:50% 50% 4px 4px"></span><div><b>Workers with spanners: the optimizer</b>The <span class="term">optimizer</span> is the repair crew. It reads every note and turns every knob a <i>small</i> amount. How big each turn is is set by the <span class="term">learning rate</span>.</div></li>
+</ol>
+</div>
+<p class="note" style="margin-top:14px">The drawing is a way to picture it. Real layers aren't rooms, they're maths on numbers, but the order of events is exactly right.</p>
+</div>
+</section>
+
+<section class="band panel">
+<div class="wrap">
+<h2>One round of learning has four steps, repeated thousands of times</h2>
+<ol class="steps">
+<li><span class="n">1</span><b>Forward.</b> A training example (a photo with its correct label) goes up the stairs. The top floor makes a guess.</li>
+<li><span class="n">2</span><b>Score.</b> The roof inspector compares the guess with the right answer and writes down the loss.</li>
+<li><span class="n">3</span><b>Backward.</b> The autograd elevator rides down and leaves a gradient note on every knob.</li>
+<li><span class="n">4</span><b>Fix.</b> The optimizer crew turns each knob a little in the direction its note says. Then the next example comes in.</li>
+</ol>
+<p style="margin-top:18px">Each turn is tiny, so one round barely changes anything. After thousands of rounds the knobs end up in positions that give good answers. That's what <b>training</b> a model means.</p>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap cols">
+<div>
+<h2>Autograd: automatic gradients</h2>
+<p>A <b>gradient</b> answers one question: <i>"If I nudge this knob a tiny bit, how much does the score change, and in which direction?"</i></p>
+<p>Working that out by hand for a billion knobs is impossible. <b>Autograd</b> ("automatic gradient") does it for you. As numbers ride up the stairs, PyTorch quietly records every calculation. When you call <code>.backward()</code>, it replays that record in reverse, from the roof down, and works out every gradient.</p>
+<p>The tiny example from before: <code>y = x₁² + x₂² + x₃²</code> with x = 1, 2, 3. Maths says the gradient of x² is 2x, so autograd gives <b>2, 4, 6</b>. Knob 3 has the biggest effect on y, so it gets the biggest note.</p>
+<p><code>requires_grad=True</code> on a tensor means "this is a knob, please track it." Layers in <code>torch.nn</code> switch it on for their knobs automatically.</p>
+</div>
+<div>
+<div class="codehead"><h2 style="margin:0">The same building in PyTorch</h2><button id="copy" type="button">Copy code</button></div>
+<pre id="code"><code>import torch
+from torch import nn
+
+<span class="c"># The building: floors stacked in order</span>
+model = nn.Sequential(
+    nn.Linear(4, 8),   <span class="c"># Floor 1: a layer with knobs</span>
+    nn.ReLU(),         <span class="c"># stairwell filter (see word list)</span>
+    nn.Linear(8, 8),   <span class="c"># Floor 2</span>
+    nn.ReLU(),
+    nn.Linear(8, 1),   <span class="c"># Top floor: the answer</span>
+)
+loss_fn = nn.MSELoss()                <span class="c"># roof inspector</span>
+optimizer = torch.optim.SGD(          <span class="c"># repair crew</span>
+    model.parameters(), lr=0.01)      <span class="c"># lr = learning rate</span>
+
+<span class="c"># Made-up practice data: 32 examples</span>
+x = torch.randn(32, 4)   <span class="c"># inputs</span>
+y = torch.randn(32, 1)   <span class="c"># right answers</span>
+
+for step in range(1000):
+    guess = model(x)            <span class="c"># 1 forward: up the stairs</span>
+    loss = loss_fn(guess, y)    <span class="c"># 2 score on the roof</span>
+    optimizer.zero_grad()       <span class="c"># wipe last round's notes</span>
+    loss.backward()             <span class="c"># 3 autograd elevator down</span>
+    optimizer.step()            <span class="c"># 4 crew turns the knobs</span></code></pre>
+<p class="note" style="margin-top:8px">The data here is random, just to show the shape of the loop.</p>
+</div>
+</div>
+</section>
+
+<section class="band panel">
+<div class="wrap">
+<h2>Word list</h2>
+<dl>
+<dt>Neural network (model)</dt><dd>The whole building: layers stacked together that turn inputs into a guess.</dd>
+<dt>Tensor</dt><dd>A grid of numbers, the only thing that moves through the building. One number is a tiny tensor, a photo is a big one.</dd>
+<dt>Layer</dt><dd>One floor. <code>nn.Linear</code> is the most common kind: it multiplies the incoming numbers by its knobs and adds them up.</dd>
+<dt>Weights / parameters</dt><dd>The knobs. The numbers the model changes while it learns.</dd>
+<dt>Activation (ReLU)</dt><dd>A simple filter in the stairwell between floors. ReLU keeps positive numbers and turns negative ones into 0. Without it, stacking floors would be no better than one floor.</dd>
+<dt>Forward pass</dt><dd>Data riding up through every floor to make a guess.</dd>
+<dt>Loss / loss function</dt><dd>The score for how wrong the guess was, and the rule that calculates it. <code>MSELoss</code> means "average of the squared differences".</dd>
+<dt>Gradient</dt><dd>A note on a knob saying which way to turn it, and how strongly, to lower the loss.</dd>
+<dt>Autograd / backward pass</dt><dd>PyTorch's tool that works out all the gradients automatically, from the roof down. Run with <code>loss.backward()</code>.</dd>
+<dt>Optimizer</dt><dd>The crew that turns the knobs using the gradients. <code>SGD</code> ("stochastic gradient descent") is the simplest one; <code>Adam</code> is a popular smarter one.</dd>
+<dt>Learning rate</dt><dd>How big each knob turn is. Too big and the knobs overshoot; too small and learning takes forever.</dd>
+<dt>Training</dt><dd>Repeating forward, score, backward, fix, many times until the guesses are good.</dd>
+</dl>
+</div>
+</section>
+
+<script>
+{
+  const btn = document.getElementById('copy');
+  btn.addEventListener('click', () => {
+    const text = document.getElementById('code').innerText;
+    navigator.clipboard.writeText(text).then(
+      () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy code', 1600); },
+      () => { btn.textContent = 'Select the code to copy'; }
+    );
+  });
+}
+</script>
+</body>
+</html>

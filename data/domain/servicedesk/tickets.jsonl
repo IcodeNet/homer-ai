@@ -1,0 +1,200 @@
+{"id": "t001", "split": "train", "text": "Hi team, nothing comes out when I print Thanks", "category": "hardware", "kb": "kb-07"}
+{"id": "t002", "split": "train", "text": "Quick one: mailbox full warning, can't send anything Same thing happened last week.", "category": "email", "kb": "kb-06"}
+{"id": "t003", "split": "train", "text": "found a usb stick in the car park, is it safe to plug in please help.", "category": "security", "kb": null}
+{"id": "t004", "split": "train", "text": "Hi team, nothing comes out when I print Please help.", "category": "hardware", "kb": "kb-07"}
+{"id": "t005", "split": "train", "text": "Quick one: browser keeps crashing on the intranet Been like this since yesterday.", "category": "software", "kb": null}
+{"id": "t006", "split": "train", "text": "hi team, can't open the board papers folder, access denied not urgent.", "category": "access", "kb": null}
+{"id": "t007", "split": "train", "text": "urgent: permission error when i open the hr inbox please help.", "category": "email", "kb": "kb-05"}
+{"id": "t008", "split": "train", "text": "Morning, screen is cracked after I dropped it Same thing happened last week.", "category": "hardware", "kb": null}
+{"id": "t009", "split": "train", "text": "The timesheet app shows a blank page Thanks", "category": "software", "kb": null}
+{"id": "t010", "split": "train", "text": "Hi, laptop sounds like a jet engine", "category": "hardware", "kb": "kb-08"}
+{"id": "t011", "split": "train", "text": "Quick one: can't reach the shared drives when working from home Thanks", "category": "network", "kb": "kb-03"}
+{"id": "t012", "split": "train", "text": "Hi team, I can't see the accounts shared mailbox Been like this since yesterday.", "category": "email", "kb": "kb-05"}
+{"id": "t013", "split": "train", "text": "hello, suspicious invoice attachment from someone i don't know it's urgent, i have a client call at 2.", "category": "security", "kb": "kb-10"}
+{"id": "t014", "split": "train", "text": "Hi, the expenses system crashes when I attach a receipt", "category": "software", "kb": null}
+{"id": "t015", "split": "train", "text": "Hi, nothing comes out when I print Thanks", "category": "hardware", "kb": "kb-07"}
+{"id": "t016", "split": "train", "text": "Hi team, can I have a second monitor This started this morning.", "category": "hardware", "kb": null}
+{"id": "t017", "split": "train", "text": "forgot my password again, can you reset it This started this morning.", "category": "access", "kb": "kb-01"}
+{"id": "t018", "split": "train", "text": "It says I've run out of space for emails It's urgent, I have a client call at 2.", "category": "email", "kb": "kb-06"}
+{"id": "t019", "split": "train", "text": "Hi, found a USB stick in the car park, is it safe to plug in Been like this since yesterday.", "category": "security", "kb": null}
+{"id": "t020", "split": "train", "text": "Hello, screen is cracked after I dropped it Not urgent.", "category": "hardware", "kb": null}
+{"id": "t021", "split": "train", "text": "Quick one: need more room in my mailbox Same thing happened last week.", "category": "email", "kb": "kb-06"}
+{"id": "t022", "split": "train", "text": "Quick one: laptop connects to Guest but not Staff Can someone call me?", "category": "network", "kb": "kb-04"}
+{"id": "t023", "split": "train", "text": "Urgent: home working: no access to the drives Not urgent.", "category": "network", "kb": "kb-03"}
+{"id": "t024", "split": "train", "text": "Urgent: The timesheet app shows a blank page Can someone call me?", "category": "software", "kb": null}
+{"id": "t025", "split": "train", "text": "Quick one: report export fails every time", "category": "software", "kb": null}
+{"id": "t026", "split": "train", "text": "it won't let me install a program I downloaded", "category": "software", "kb": "kb-09"}
+{"id": "t027", "split": "train", "text": "it asks for a six-digit code and i don't have my old phone any more this started this morning.", "category": "access", "kb": "kb-02"}
+{"id": "t028", "split": "train", "text": "quick one: finance system won't open at home, works fine in the office can someone call me?", "category": "network", "kb": "kb-03"}
+{"id": "t029", "split": "train", "text": "Quick one: An email from the 'CEO' wants gift cards urgently This started this morning.", "category": "security", "kb": "kb-10"}
+{"id": "t030", "split": "train", "text": "Quick one: need a network cable for my desk Been like this since yesterday.", "category": "network", "kb": null}
+{"id": "t031", "split": "train", "text": "Hi, the expenses system crashes when I attach a receipt Please help.", "category": "software", "kb": null}
+{"id": "t032", "split": "train", "text": "Hello, need a new password, the old one stopped working Same thing happened last week.", "category": "access", "kb": "kb-01"}
+{"id": "t033", "split": "train", "text": "Quick one: can you give me edit rights on the team site", "category": "access", "kb": null}
+{"id": "t034", "split": "train", "text": "Urgent: printer says offline for everyone here Please help.", "category": "hardware", "kb": "kb-07"}
+{"id": "t035", "split": "train", "text": "QR code for the authenticator won't scan Same thing happened last week.", "category": "access", "kb": "kb-02"}
+{"id": "t036", "split": "train", "text": "Morning, finance system won't open at home, works fine in the office Thanks", "category": "network", "kb": "kb-03"}
+{"id": "t037", "split": "train", "text": "Hi team, wifi keeps dropping in meeting room 3 Same thing happened last week.", "category": "network", "kb": "kb-04"}
+{"id": "t038", "split": "train", "text": "hi team, i can't see the accounts shared mailbox thanks", "category": "email", "kb": "kb-05"}
+{"id": "t039", "split": "train", "text": "Urgent: I can't see the accounts shared mailbox Please help.", "category": "email", "kb": "kb-05"}
+{"id": "t040", "split": "train", "text": "Morning, websites are very slow from the office Can someone call me?", "category": "network", "kb": null}
+{"id": "t041", "split": "train", "text": "Urgent: our branch link has been down since 9 Can someone call me?", "category": "network", "kb": null}
+{"id": "t042", "split": "train", "text": "Hello, report export fails every time It's urgent, I have a client call at 2.", "category": "software", "kb": null}
+{"id": "t043", "split": "train", "text": "the remote connection keeps timing out at my house Please help.", "category": "network", "kb": "kb-03"}
+{"id": "t044", "split": "train", "text": "urgent: please add the design app to my laptop please help.", "category": "software", "kb": "kb-09"}
+{"id": "t045", "split": "train", "text": "I think this message is a scam, what do I do with it", "category": "security", "kb": "kb-10"}
+{"id": "t046", "split": "train", "text": "Quick one: it's so sluggish since the last update Been like this since yesterday.", "category": "hardware", "kb": "kb-08"}
+{"id": "t047", "split": "train", "text": "Morning, can you give me edit rights on the team site Can someone call me?", "category": "access", "kb": null}
+{"id": "t048", "split": "train", "text": "Quick one: docking station doesn't charge the laptop Not urgent.", "category": "hardware", "kb": null}
+{"id": "t049", "split": "train", "text": "Quick one: need the statistics package for a new project This started this morning.", "category": "software", "kb": "kb-09"}
+{"id": "t050", "split": "train", "text": "Quick one: getting a message that my mail storage is nearly used up Can someone call me?", "category": "email", "kb": "kb-06"}
+{"id": "t051", "split": "train", "text": "Quick one: I think a colleague is using my login", "category": "security", "kb": null}
+{"id": "t052", "split": "train", "text": "Hi team, can't open an attachment Been like this since yesterday.", "category": "email", "kb": null}
+{"id": "t053", "split": "train", "text": "urgent: laptop connects to guest but not staff same thing happened last week.", "category": "network", "kb": "kb-04"}
+{"id": "t054", "split": "train", "text": "Morning, calendar invites aren't arriving", "category": "email", "kb": null}
+{"id": "t055", "split": "train", "text": "Hi team, can't open the board papers folder, access denied", "category": "access", "kb": null}
+{"id": "t056", "split": "train", "text": "Hi team, need access to the finance folder It's urgent, I have a client call at 2.", "category": "access", "kb": null}
+{"id": "t057", "split": "train", "text": "hi, mailbox full warning, can't send anything it's urgent, i have a client call at 2.", "category": "email", "kb": "kb-06"}
+{"id": "t058", "split": "train", "text": "Hello, I got a new phone and the code app is gone Same thing happened last week.", "category": "access", "kb": "kb-02"}
+{"id": "t059", "split": "train", "text": "Hello, it won't let me install a program I downloaded Same thing happened last week.", "category": "software", "kb": "kb-09"}
+{"id": "t060", "split": "train", "text": "I clicked a link in a dodgy email, help Been like this since yesterday.", "category": "security", "kb": "kb-10"}
+{"id": "t061", "split": "train", "text": "Hello, my work phone was stolen last night Not urgent.", "category": "security", "kb": null}
+{"id": "t062", "split": "train", "text": "Hi team, I left my laptop on the train", "category": "security", "kb": null}
+{"id": "t063", "split": "train", "text": "found a USB stick in the car park, is it safe to plug in", "category": "security", "kb": null}
+{"id": "t064", "split": "train", "text": "Hi team, requesting the project planning software Same thing happened last week.", "category": "software", "kb": "kb-09"}
+{"id": "t065", "split": "train", "text": "The wireless is really patchy on the second floor Same thing happened last week.", "category": "network", "kb": "kb-04"}
+{"id": "t066", "split": "train", "text": "Hi, everything freezes when I have a few tabs open", "category": "hardware", "kb": "kb-08"}
+{"id": "t067", "split": "train", "text": "Hi team, The timesheet app shows a blank page", "category": "software", "kb": null}
+{"id": "t068", "split": "train", "text": "hi team, my work phone was stolen last night", "category": "security", "kb": null}
+{"id": "t069", "split": "train", "text": "Quick one: I clicked a link in a dodgy email, help Same thing happened last week.", "category": "security", "kb": "kb-10"}
+{"id": "t070", "split": "train", "text": "Hi, I clicked a link in a dodgy email, help This started this morning.", "category": "security", "kb": "kb-10"}
+{"id": "t071", "split": "train", "text": "quick one: the fan is going non-stop and it's hot been like this since yesterday.", "category": "hardware", "kb": "kb-08"}
+{"id": "t072", "split": "train", "text": "Hi, An email from the 'CEO' wants gift cards urgently", "category": "security", "kb": "kb-10"}
+{"id": "t073", "split": "train", "text": "Hello, no signal in the board room Same thing happened last week.", "category": "network", "kb": "kb-04"}
+{"id": "t074", "split": "train", "text": "Urgent: it's so sluggish since the last update", "category": "hardware", "kb": "kb-08"}
+{"id": "t075", "split": "train", "text": "morning, laptop connects to guest but not staff please help.", "category": "network", "kb": "kb-04"}
+{"id": "t076", "split": "train", "text": "internet cuts out every few minutes at my desk Same thing happened last week.", "category": "network", "kb": "kb-04"}
+{"id": "t077", "split": "train", "text": "Morning, no signal in the board room", "category": "network", "kb": "kb-04"}
+{"id": "t078", "split": "train", "text": "I think this message is a scam, what do I do with it This started this morning.", "category": "security", "kb": "kb-10"}
+{"id": "t079", "split": "train", "text": "Hi, my keyboard has stopped working Thanks", "category": "hardware", "kb": null}
+{"id": "t080", "split": "train", "text": "hi team, think i typed my password into a fake page", "category": "security", "kb": "kb-10"}
+{"id": "t081", "split": "train", "text": "Urgent: internet cuts out every few minutes at my desk Thanks", "category": "network", "kb": "kb-04"}
+{"id": "t082", "split": "train", "text": "Urgent: need a network cable for my desk", "category": "network", "kb": null}
+{"id": "t083", "split": "train", "text": "Hello, VPN client asks me to sign in over and over", "category": "network", "kb": "kb-03"}
+{"id": "t084", "split": "train", "text": "Morning, leaver's account needs closing on Friday It's urgent, I have a client call at 2.", "category": "access", "kb": null}
+{"id": "t085", "split": "train", "text": "Hi team, can't reach the shared drives when working from home Not urgent.", "category": "network", "kb": "kb-03"}
+{"id": "t086", "split": "train", "text": "Hello, antivirus popped up a warning about a file Not urgent.", "category": "security", "kb": null}
+{"id": "t087", "split": "train", "text": "Hi, video calls are choppy for everyone today Been like this since yesterday.", "category": "network", "kb": null}
+{"id": "t088", "split": "train", "text": "Quick one: can't reach the shared drives when working from home", "category": "network", "kb": "kb-03"}
+{"id": "t089", "split": "train", "text": "Hello, need the statistics package for a new project It's urgent, I have a client call at 2.", "category": "software", "kb": "kb-09"}
+{"id": "t090", "split": "train", "text": "I can't see the accounts shared mailbox", "category": "email", "kb": "kb-05"}
+{"id": "t091", "split": "train", "text": "need a new password, the old one stopped working Been like this since yesterday.", "category": "access", "kb": "kb-01"}
+{"id": "t092", "split": "train", "text": "internet cuts out every few minutes at my desk This started this morning.", "category": "network", "kb": "kb-04"}
+{"id": "t093", "split": "train", "text": "Hi, new starter on Monday needs a laptop and two screens", "category": "hardware", "kb": null}
+{"id": "t094", "split": "train", "text": "Hello, printer says offline for everyone here Please help.", "category": "hardware", "kb": "kb-07"}
+{"id": "t095", "split": "train", "text": "Urgent: How do I install the screenshot program Not urgent.", "category": "software", "kb": "kb-09"}
+{"id": "t096", "split": "train", "text": "working from a hotel and can't get onto the company network", "category": "network", "kb": "kb-03"}
+{"id": "t097", "split": "train", "text": "Hi, authenticator app isn't giving me codes on my new mobile", "category": "access", "kb": "kb-02"}
+{"id": "t098", "split": "train", "text": "It asks for a six-digit code and I don't have my old phone any more Been like this since yesterday.", "category": "access", "kb": "kb-02"}
+{"id": "t099", "split": "train", "text": "Urgent: no signal in the board room", "category": "network", "kb": "kb-04"}
+{"id": "t100", "split": "train", "text": "Urgent: I got a new phone and the code app is gone Same thing happened last week.", "category": "access", "kb": "kb-02"}
+{"id": "t101", "split": "train", "text": "Hi, my laptop is really slow today", "category": "hardware", "kb": "kb-08"}
+{"id": "t102", "split": "train", "text": "Quick one: is this parcel delivery email real? This started this morning.", "category": "security", "kb": "kb-10"}
+{"id": "t103", "split": "train", "text": "morning, home working: no access to the drives it's urgent, i have a client call at 2.", "category": "network", "kb": "kb-03"}
+{"id": "t104", "split": "train", "text": "is this parcel delivery email real? Thanks", "category": "security", "kb": "kb-10"}
+{"id": "t105", "split": "train", "text": "Morning, spreadsheet program closes by itself Thanks", "category": "software", "kb": null}
+{"id": "t106", "split": "train", "text": "The timesheet app shows a blank page It's urgent, I have a client call at 2.", "category": "software", "kb": null}
+{"id": "t107", "split": "train", "text": "my laptop is really slow today Same thing happened last week.", "category": "hardware", "kb": "kb-08"}
+{"id": "t108", "split": "train", "text": "urgent: the expenses system crashes when i attach a receipt not urgent.", "category": "software", "kb": null}
+{"id": "t109", "split": "train", "text": "authenticator app isn't giving me codes on my new mobile same thing happened last week.", "category": "access", "kb": "kb-02"}
+{"id": "t110", "split": "train", "text": "shared mailbox disappeared from my mail app please help.", "category": "email", "kb": "kb-05"}
+{"id": "t111", "split": "train", "text": "Urgent: our branch link has been down since 9 Thanks", "category": "network", "kb": null}
+{"id": "t112", "split": "train", "text": "laptop sounds like a jet engine Can someone call me?", "category": "hardware", "kb": "kb-08"}
+{"id": "t113", "split": "train", "text": "hi, think i typed my password into a fake page thanks", "category": "security", "kb": "kb-10"}
+{"id": "t114", "split": "train", "text": "Hi, antivirus popped up a warning about a file Can someone call me?", "category": "security", "kb": null}
+{"id": "t115", "split": "train", "text": "Hi, need a network cable for my desk This started this morning.", "category": "network", "kb": null}
+{"id": "t116", "split": "train", "text": "Hi, How do I install the screenshot program Can someone call me?", "category": "software", "kb": "kb-09"}
+{"id": "t117", "split": "train", "text": "Quick one: shared mailbox disappeared from my mail app Not urgent.", "category": "email", "kb": "kb-05"}
+{"id": "t118", "split": "train", "text": "Urgent: I left my laptop on the train Thanks", "category": "security", "kb": null}
+{"id": "t119", "split": "train", "text": "hi team, the copier by reception won't take my print jobs thanks", "category": "hardware", "kb": "kb-07"}
+{"id": "t120", "split": "train", "text": "Hi team, I got a new phone and the code app is gone Not urgent.", "category": "access", "kb": "kb-02"}
+{"id": "t121", "split": "train", "text": "i need the diagram tool installed", "category": "software", "kb": "kb-09"}
+{"id": "t122", "split": "train", "text": "Hi team, My password expired over the weekend and now I'm locked out Been like this since yesterday.", "category": "access", "kb": "kb-01"}
+{"id": "t123", "split": "train", "text": "can i have a second monitor", "category": "hardware", "kb": null}
+{"id": "t124", "split": "train", "text": "Hi, need to recall an email I sent by mistake Been like this since yesterday.", "category": "email", "kb": null}
+{"id": "t125", "split": "train", "text": "Hello, calendar doesn't sync to my phone Please help.", "category": "software", "kb": null}
+{"id": "t126", "split": "train", "text": "Hello, I need the diagram tool installed Not urgent.", "category": "software", "kb": "kb-09"}
+{"id": "t127", "split": "train", "text": "Urgent: websites are very slow from the office Please help.", "category": "network", "kb": null}
+{"id": "t128", "split": "train", "text": "Hi, The timesheet app shows a blank page Same thing happened last week.", "category": "software", "kb": null}
+{"id": "t129", "split": "train", "text": "Working from a hotel and can't get onto the company network Been like this since yesterday.", "category": "network", "kb": "kb-03"}
+{"id": "t130", "split": "train", "text": "how do i add the invoices mailbox to my mail can someone call me?", "category": "email", "kb": "kb-05"}
+{"id": "t131", "split": "train", "text": "Hi team, laptop connects to Guest but not Staff Been like this since yesterday.", "category": "network", "kb": "kb-04"}
+{"id": "t132", "split": "train", "text": "Hi team, It says I've run out of space for emails It's urgent, I have a client call at 2.", "category": "email", "kb": "kb-06"}
+{"id": "t133", "split": "train", "text": "can't join the Staff wifi on my laptop Can someone call me?", "category": "network", "kb": "kb-04"}
+{"id": "t134", "split": "train", "text": "the fan is going non-stop and it's hot This started this morning.", "category": "hardware", "kb": "kb-08"}
+{"id": "t135", "split": "train", "text": "docking station doesn't charge the laptop Been like this since yesterday.", "category": "hardware", "kb": null}
+{"id": "t136", "split": "train", "text": "Hi, is this parcel delivery email real?", "category": "security", "kb": "kb-10"}
+{"id": "t137", "split": "train", "text": "urgent: it won't let me install a program i downloaded", "category": "software", "kb": "kb-09"}
+{"id": "t138", "split": "train", "text": "The wireless is really patchy on the second floor Been like this since yesterday.", "category": "network", "kb": "kb-04"}
+{"id": "t139", "split": "train", "text": "Morning, forgot my password again, can you reset it Same thing happened last week.", "category": "access", "kb": "kb-01"}
+{"id": "t140", "split": "train", "text": "Urgent: the app on my phone that makes the login numbers needs setting up again", "category": "access", "kb": "kb-02"}
+{"id": "t141", "split": "train", "text": "Hello, can I have a second monitor Been like this since yesterday.", "category": "hardware", "kb": null}
+{"id": "t142", "split": "train", "text": "Urgent: need a network cable for my desk It's urgent, I have a client call at 2.", "category": "network", "kb": null}
+{"id": "t143", "split": "train", "text": "Quick one: can't join the Staff wifi on my laptop Thanks", "category": "network", "kb": "kb-04"}
+{"id": "t144", "split": "train", "text": "Quick one: screen is cracked after I dropped it Been like this since yesterday.", "category": "hardware", "kb": null}
+{"id": "t145", "split": "train", "text": "Quick one: need to recall an email I sent by mistake Same thing happened last week.", "category": "email", "kb": null}
+{"id": "t146", "split": "train", "text": "Hi team, docking station doesn't charge the laptop Can someone call me?", "category": "hardware", "kb": null}
+{"id": "t147", "split": "train", "text": "Hello, mailbox full warning, can't send anything This started this morning.", "category": "email", "kb": "kb-06"}
+{"id": "t148", "split": "train", "text": "spreadsheet program closes by itself Not urgent.", "category": "software", "kb": null}
+{"id": "t149", "split": "train", "text": "need a new password, the old one stopped working Thanks", "category": "access", "kb": "kb-01"}
+{"id": "t150", "split": "train", "text": "hi, how do i add the office printer to my laptop please help.", "category": "hardware", "kb": "kb-07"}
+{"id": "t151", "split": "test", "text": "Hi team, the meeting room screen won't connect to the network", "category": "network", "kb": null}
+{"id": "t152", "split": "test", "text": "Lost my phone so I can't do the two-step sign in Thanks", "category": "access", "kb": "kb-02"}
+{"id": "t153", "split": "test", "text": "morning, video call app has no sound", "category": "software", "kb": null}
+{"id": "t154", "split": "test", "text": "hi, lost my phone so i can't do the two-step sign in please help.", "category": "access", "kb": "kb-02"}
+{"id": "t155", "split": "test", "text": "Morning, emails from a client go to junk This started this morning.", "category": "email", "kb": null}
+{"id": "t156", "split": "test", "text": "Hi team, contractor needs a temporary login Same thing happened last week.", "category": "access", "kb": null}
+{"id": "t157", "split": "test", "text": "contractor needs a temporary login", "category": "access", "kb": null}
+{"id": "t158", "split": "test", "text": "Quick one: the customer database is giving an error 500 Been like this since yesterday.", "category": "software", "kb": null}
+{"id": "t159", "split": "test", "text": "hi, vpn won't connect from home same thing happened last week.", "category": "network", "kb": "kb-03"}
+{"id": "t160", "split": "test", "text": "morning, need a replacement charger please help.", "category": "hardware", "kb": null}
+{"id": "t161", "split": "test", "text": "contractor needs a temporary login thanks", "category": "access", "kb": null}
+{"id": "t162", "split": "test", "text": "hi team, emails from a client go to junk been like this since yesterday.", "category": "email", "kb": null}
+{"id": "t163", "split": "test", "text": "Hello, My machine hangs every time I open a spreadsheet Same thing happened last week.", "category": "hardware", "kb": "kb-08"}
+{"id": "t164", "split": "test", "text": "set up an out-of-office for a colleague who is off sick Not urgent.", "category": "email", "kb": null}
+{"id": "t165", "split": "test", "text": "Quick one: can I get a licence for the PDF editor", "category": "software", "kb": "kb-09"}
+{"id": "t166", "split": "test", "text": "hello, stuck on connecting when i try the vpn thanks", "category": "network", "kb": "kb-03"}
+{"id": "t167", "split": "test", "text": "Hello, lost my door pass Been like this since yesterday.", "category": "security", "kb": null}
+{"id": "t168", "split": "test", "text": "Urgent: contractor needs a temporary login Please help.", "category": "access", "kb": null}
+{"id": "t169", "split": "test", "text": "Quick one: the customer database is giving an error 500 Thanks", "category": "software", "kb": null}
+{"id": "t170", "split": "test", "text": "the printer on floor 2 shows offline Not urgent.", "category": "hardware", "kb": "kb-07"}
+{"id": "t171", "split": "test", "text": "Hello, Emails bounce back saying my inbox is full", "category": "email", "kb": "kb-06"}
+{"id": "t172", "split": "test", "text": "Hello, I can't log in, it says my password is wrong Same thing happened last week.", "category": "access", "kb": "kb-01"}
+{"id": "t173", "split": "test", "text": "Hi team, need a replacement charger Can someone call me?", "category": "hardware", "kb": null}
+{"id": "t174", "split": "test", "text": "Quick one: Emails bounce back saying my inbox is full Please help.", "category": "email", "kb": "kb-06"}
+{"id": "t175", "split": "test", "text": "the meeting room screen won't connect to the network Been like this since yesterday.", "category": "network", "kb": null}
+{"id": "t176", "split": "test", "text": "hello, stuck on connecting when i try the vpn", "category": "network", "kb": "kb-03"}
+{"id": "t177", "split": "test", "text": "Morning, VPN won't connect from home Please help.", "category": "network", "kb": "kb-03"}
+{"id": "t178", "split": "test", "text": "Morning, mouse is dead even with new batteries Not urgent.", "category": "hardware", "kb": null}
+{"id": "t179", "split": "test", "text": "Hi team, need the support inbox to appear on my laptop Same thing happened last week.", "category": "email", "kb": "kb-05"}
+{"id": "t180", "split": "test", "text": "need the support inbox to appear on my laptop", "category": "email", "kb": "kb-05"}
+{"id": "t181", "split": "test", "text": "network port at my desk is dead Been like this since yesterday.", "category": "network", "kb": null}
+{"id": "t182", "split": "test", "text": "hi, the reset link never arrived in my inbox same thing happened last week.", "category": "access", "kb": "kb-01"}
+{"id": "t183", "split": "test", "text": "quick one: my machine hangs every time i open a spreadsheet can someone call me?", "category": "hardware", "kb": "kb-08"}
+{"id": "t184", "split": "test", "text": "Hi team, Stuck on Connecting when I try the VPN It's urgent, I have a client call at 2.", "category": "network", "kb": "kb-03"}
+{"id": "t185", "split": "test", "text": "Quick one: second step of login fails since I changed handset Not urgent.", "category": "access", "kb": "kb-02"}
+{"id": "t186", "split": "test", "text": "second step of login fails since I changed handset Can someone call me?", "category": "access", "kb": "kb-02"}
+{"id": "t187", "split": "test", "text": "Morning, new joiner needs an account created Same thing happened last week.", "category": "access", "kb": null}
+{"id": "t188", "split": "test", "text": "morning, the customer database is giving an error 500 same thing happened last week.", "category": "software", "kb": null}
+{"id": "t189", "split": "test", "text": "Hi team, mouse is dead even with new batteries", "category": "hardware", "kb": null}
+{"id": "t190", "split": "test", "text": "hi team, got a weird email asking for my password not urgent.", "category": "security", "kb": "kb-10"}
+{"id": "t191", "split": "test", "text": "Urgent: can I get a licence for the PDF editor This started this morning.", "category": "software", "kb": "kb-09"}
+{"id": "t192", "split": "test", "text": "hi, lost my door pass it's urgent, i have a client call at 2.", "category": "security", "kb": null}
+{"id": "t193", "split": "test", "text": "how do I archive old emails Can someone call me?", "category": "email", "kb": "kb-06"}
+{"id": "t194", "split": "test", "text": "urgent: the customer database is giving an error 500 it's urgent, i have a client call at 2.", "category": "software", "kb": null}
+{"id": "t195", "split": "test", "text": "hi, the printer on floor 2 shows offline", "category": "hardware", "kb": "kb-07"}
+{"id": "t196", "split": "test", "text": "Hi, how do I archive old emails", "category": "email", "kb": "kb-06"}
+{"id": "t197", "split": "test", "text": "Quick one: video call app has no sound This started this morning.", "category": "software", "kb": null}
+{"id": "t198", "split": "test", "text": "can I get a licence for the PDF editor Please help.", "category": "software", "kb": "kb-09"}
+{"id": "t199", "split": "test", "text": "video call app has no sound", "category": "software", "kb": null}
+{"id": "t200", "split": "test", "text": "Quick one: My machine hangs every time I open a spreadsheet Not urgent.", "category": "hardware", "kb": "kb-08"}

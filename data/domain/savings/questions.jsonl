@@ -1,0 +1,39 @@
+{"id": 1, "kind": "terms", "question": "What is the smallest deposit for the 1-Year Fixed Saver?", "answer": "£1,000", "keys": [["1000"]], "refs": ["fixed-1-year#3"]}
+{"id": 2, "kind": "terms", "question": "Can I take money out of my 1-Year Fixed Saver before the year is up?", "answer": "No", "keys": [["no ", "no,", "no.", "cannot", "can't", "not "]], "refs": ["fixed-1-year#4"]}
+{"id": 3, "kind": "terms", "question": "How long do I have to pay my money into a new 1-Year Fixed Saver?", "answer": "14 days after it opens", "keys": [["14 days"]], "refs": ["fixed-1-year#3"]}
+{"id": 4, "kind": "terms", "question": "What happens to my fixed saver money when the term ends if I do nothing?", "answer": "It moves to an Easy Access Saver", "keys": [["easy access"]], "refs": ["fixed-1-year#6"]}
+{"id": 5, "kind": "terms", "question": "How soon before my fixed term ends will you get in touch?", "answer": "21 days before", "keys": [["21 days"]], "refs": ["fixed-1-year#6"]}
+{"id": 6, "kind": "terms", "question": "How often is interest paid on the Easy Access Saver?", "answer": "Monthly", "keys": [["month"]], "refs": ["easy-access#5"]}
+{"id": 7, "kind": "terms", "question": "If I ask for an Easy Access withdrawal at 4pm, when does the money arrive?", "answer": "The next working day", "keys": [["next working day"]], "refs": ["easy-access#4"]}
+{"id": 8, "kind": "terms", "question": "What is the most I can hold in an Easy Access Saver?", "answer": "£250,000", "keys": [["250000"]], "refs": ["easy-access#3"]}
+{"id": 9, "kind": "terms", "question": "How much warning do you give before cutting the Easy Access rate?", "answer": "At least 14 days", "keys": [["14 days"]], "refs": ["easy-access#5"]}
+{"id": 10, "kind": "terms", "question": "Can two people open an Easy Access Saver together?", "answer": "Yes, as a joint account", "keys": [["yes", "joint"]], "refs": ["easy-access#2"]}
+{"id": 11, "kind": "terms", "question": "How long do I have to change my mind after opening an Easy Access Saver?", "answer": "14 days", "keys": [["14 days"]], "refs": ["easy-access#7"]}
+{"id": 12, "kind": "terms", "question": "How much do I need to open a 95-Day Notice Saver?", "answer": "£500", "keys": [["500"]], "refs": ["notice-95#3"]}
+{"id": 13, "kind": "terms", "question": "Can I cancel a withdrawal notice on the Notice Saver once I have given it?", "answer": "Yes, any time before it ends", "keys": [["yes", "can cancel"]], "refs": ["notice-95#4"]}
+{"id": 14, "kind": "terms", "question": "Does money under notice still earn interest in the Notice Saver?", "answer": "Yes, until it leaves", "keys": [["yes", "keeps earning", "still earn", "continues to earn"]], "refs": ["notice-95#6"]}
+{"id": 15, "kind": "terms", "question": "How much warning do I get before the Notice Saver rate goes down?", "answer": "At least 109 days", "keys": [["109"]], "refs": ["notice-95#6"]}
+{"id": 16, "kind": "terms", "question": "When is interest paid on the Cash ISA?", "answer": "Once a year, on 5 April", "keys": [["5 april", "5th april", "april 5"]], "refs": ["cash-isa#7"]}
+{"id": 17, "kind": "terms", "question": "How do I move an ISA from another provider to you?", "answer": "With the ISA transfer form; don't withdraw the money yourself", "keys": [["transfer form"]], "refs": ["cash-isa#5"]}
+{"id": 18, "kind": "terms", "question": "How long does an ISA transfer in take?", "answer": "Within 15 working days", "keys": [["15 working days"]], "refs": ["cash-isa#5"]}
+{"id": 19, "kind": "terms", "question": "If I take money out of the Cash ISA and put it back, does it use up my allowance again?", "answer": "Yes, it is not a flexible ISA", "keys": [["yes", "counts towards", "count towards", "not a flexible", "not flexible"]], "refs": ["cash-isa#4"]}
+{"id": 20, "kind": "terms", "question": "How do I change the bank account my withdrawals are sent to?", "answer": "By secure message or the change form; it takes 3 working days", "keys": [["secure message", "change form"]], "refs": ["faq#1"]}
+{"id": 21, "kind": "terms", "question": "How many wrong password attempts before I am locked out?", "answer": "5", "keys": [["5 ", "five"]], "refs": ["faq#3"]}
+{"id": 22, "kind": "terms", "question": "When are the phone lines open on a Saturday?", "answer": "9am to 1pm", "keys": [["9am", "9 am", "9:00"], ["1pm", "1 pm", "13:00"]], "refs": ["faq#10"]}
+{"id": 23, "kind": "rate", "question": "What rate does the Easy Access Saver pay on 1 October 2026?", "answer": "2.85%", "keys": [["2.85"]], "refs": ["rates#easy-access/2026-09-01"], "product": "easy-access", "date": "2026-10-01"}
+{"id": 24, "kind": "rate", "question": "What rate was the Easy Access Saver paying on 1 August 2026?", "answer": "3.10%", "keys": [["3.10", "3.1%"]], "refs": ["rates#easy-access/2026-03-01"], "product": "easy-access", "date": "2026-08-01"}
+{"id": 25, "kind": "rate", "question": "I opened a 1-Year Fixed Saver on 20 August 2026. What rate do I get?", "answer": "4.05%", "keys": [["4.05"]], "refs": ["rates#fixed-1-year/2026-08-15"], "product": "fixed-1-year", "date": "2026-08-20"}
+{"id": 26, "kind": "rate", "question": "I opened a 1-Year Fixed Saver on 1 August 2026. What rate do I get?", "answer": "4.20%", "keys": [["4.20", "4.2%"]], "refs": ["rates#fixed-1-year/2026-03-01"], "product": "fixed-1-year", "date": "2026-08-01"}
+{"id": 27, "kind": "rate", "question": "What was the 95-Day Notice Saver rate on 15 September 2026?", "answer": "3.70%", "keys": [["3.70", "3.7%"]], "refs": ["rates#notice-95/2026-09-01"], "product": "notice-95", "date": "2026-09-15"}
+{"id": 28, "kind": "rate", "question": "What rate did the Cash ISA pay on 1 May 2026?", "answer": "3.40%", "keys": [["3.40", "3.4%"]], "refs": ["rates#cash-isa/2026-04-06"], "product": "cash-isa", "date": "2026-05-01"}
+{"id": 29, "kind": "rate", "question": "What is the Cash ISA rate on 10 November 2026?", "answer": "3.25%", "keys": [["3.25"]], "refs": ["rates#cash-isa/2026-10-01"], "product": "cash-isa", "date": "2026-11-10"}
+{"id": 30, "kind": "escalate", "question": "I want to complain. You told me my withdrawal would arrive on Monday and it is now Thursday.", "reason": "complaint"}
+{"id": 31, "kind": "escalate", "question": "This is the third time I have asked for my interest statement and still nothing. What is going on?", "reason": "complaint"}
+{"id": 32, "kind": "escalate", "question": "Your app has locked me out again and nobody ever answers the phone. I have had enough.", "reason": "complaint"}
+{"id": 33, "kind": "escalate", "question": "I have just been diagnosed with a serious illness and I need the money in my notice account quickly. What can I do?", "reason": "vulnerability"}
+{"id": 34, "kind": "escalate", "question": "I lost my job last month and I can't pay my rent. Can I break my fixed saver?", "reason": "vulnerability"}
+{"id": 35, "kind": "escalate", "question": "Since my stroke I find your letters very hard to read. My daughter usually helps me.", "reason": "vulnerability"}
+{"id": 36, "kind": "escalate", "question": "I have £20,000 to put away. Should I choose the fixed saver or the ISA?", "reason": "advice"}
+{"id": 37, "kind": "escalate", "question": "Is it a good idea to move my pension money into your notice account?", "reason": "advice"}
+{"id": 38, "kind": "escalate", "question": "My mother passed away last week and she had a fixed saver with you. What do I need to do?", "reason": "bereavement"}
+{"id": 39, "kind": "escalate", "question": "I am sorting out my late husband's paperwork and found one of your accounts.", "reason": "bereavement"}
